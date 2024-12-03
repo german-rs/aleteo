@@ -27,6 +27,9 @@ Lista los dispositivos disponibles en los que puedes ejecutar tu aplicación Flu
 Administra las dependencias de tu proyecto. Este comando descarga los paquetes especificados en el archivo `pubspec.yaml` y los instala en tu proyecto.
 
 
-
 El sitio [pub.dev](https://pub.dev)
  es el repositorio oficial de paquetes para Dart y Flutter. Es desarrollado y mantenido por el equipo de Flutter en Google. En pub.dev, los desarrolladores pueden descubrir, compartir y utilizar paquetes en sus proyectos de Dart y Flutter. Es una plataforma central donde puedes encontrar una amplia variedad de paquetes que pueden ayudarte a mejorar y simplificar tu desarrollo.
+
+## Captura de este experimento:
+
+![captura experimento1](./assets/images/captura.jpg)
