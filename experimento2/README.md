@@ -1,9 +1,13 @@
 # Experimento 02
 
-
 ## Descripción del Código
 
 Este proyecto de Flutter incluye un widget principal que demuestra el uso de `Fluttertoast` para mostrar mensajes toast en la pantalla. A continuación se describen las principales características del código.
+
+## Captura de pantalla
+
+![captura de pantalla](./assets/images/Screenshot_1733336220.jpg)
+
 
 ### Importaciones de Paquetes
 - `flutter/material.dart`: Importa los widgets y temas básicos de Flutter.
