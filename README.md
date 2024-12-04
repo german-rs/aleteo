@@ -8,6 +8,7 @@ Este repositorio contiene una colección de ejemplos desarrollados como parte de
 | Experimento       | Descripción                                         |
 |-------------------|-----------------------------------------------------|
 | [Experimento 1 ](https://github.com/german-rs/aleteo/tree/main/experimento1)    | Introducción a Flutter - comandos                     |
-| Experimento 2     | No disponible aún                       |
+| [Experimento 2 ](https://github.com/german-rs/aleteo/tree/main/experimento2)    | Aplicación Flutter con diseño responsive, botones flotantes, Toast y navegación adaptativa para plataformas móviles.                     |
+
 
 
