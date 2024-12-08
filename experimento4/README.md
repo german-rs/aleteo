@@ -1,16 +1,11 @@
-# experimento4
+# Experimento4
 
-A new Flutter project.
+## Flutter Application Menu
 
-## Getting Started
+Este repositorio contiene un proyecto de Flutter tien una pantalla principal de menú para seleccionar diferentes aplicaciones. Actualmente, estoy trabajando en la implementación del "Gestor de Hábitos". Esta aplicación tiene como objetivo proporcionar una forma eficiente y fácil de usar para gestionar tus hábitos diarios, así como otras funcionalidades adicionales que se irán desarrollando.
 
-This project is a starting point for a Flutter application.
+## Características del Proyecto
 
-A few resources to get you started if this is your first Flutter project:
+### Pantalla de Menú
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+La pantalla principal de la aplicación es un menú que permite a los usuarios navegar entre diferentes aplicaciones. El código para esta pantalla es el siguiente:
