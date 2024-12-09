@@ -1,3 +1,4 @@
+import 'package:experimento3/clases/estados.dart';
 import 'package:flutter/material.dart';
 
 class Page2 extends StatelessWidget {
@@ -11,11 +12,16 @@ class Page2 extends StatelessWidget {
         centerTitle: true,
         title: Text('Producto $product'),
       ),
-      body: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: const Text("Volver")),
+      body: Column(
+        children: [
+          ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text("Volver")),
+          const Expanded(child: Estados())
+        ],
+      ),
     );
   }
 }
