@@ -1,5 +1,7 @@
+import 'dart:developer';
 import 'package:experimento4/gestor_habitos/new_habito.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeHabitosPage extends StatefulWidget {
   const HomeHabitosPage({super.key});
@@ -9,12 +11,42 @@ class HomeHabitosPage extends StatefulWidget {
 }
 
 class _HomeHabitosPageState extends State<HomeHabitosPage> {
-  final List<Habito> habits = [];
+  final List<Habit> habits = [];
+  late final SharedPreferences prefs;
+  String? action;
 
-  void _addHabito(String name, String desc) {
+  // Escritura de datos
+  // Lectura de datos
+  // initState -> leer si tenemos informacion almacenada
+
+  @override
+  void initState() {
+    super.initState();
+    initShared();
+  }
+
+  initShared() async {
+    prefs = await SharedPreferences.getInstance();
+    getData();
+  }
+
+  saveData() async {
+    await prefs.setString('test', 'Test 1');
+    getData();
+  }
+
+  getData() {
+    setState(() {
+      action = prefs.getString('test') ?? 'Sin data';
+    });
+
+    log(action!);
+  }
+
+  void _addHabit(String name, String desc) {
     setState(() {
       habits.add(
-        Habito(
+        Habit(
           name: name,
           description: desc,
         ),
@@ -32,7 +64,7 @@ class _HomeHabitosPageState extends State<HomeHabitosPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Gestor de hábitos'),
+        title: Text("Gestor de habitos $action"),
       ),
       body: ListView.builder(
         itemCount: habits.length,
@@ -56,29 +88,43 @@ class _HomeHabitosPageState extends State<HomeHabitosPage> {
           );
         },
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => NewHabito(
-                submitHabit: _addHabito,
-              ),
-            ),
-          );
-        },
-        child: const Icon(Icons.add),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            heroTag: "floating-1",
+            onPressed: () {
+              saveData();
+            },
+            child: const Icon(Icons.save),
+          ),
+          const SizedBox(height: 8),
+          FloatingActionButton(
+            heroTag: "floating-2",
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => NewHabito(
+                    submitHabit: _addHabit,
+                  ),
+                ),
+              );
+            },
+            child: const Icon(Icons.add),
+          )
+        ],
       ),
     );
   }
 }
 
-class Habito {
+class Habit {
   String name;
   String description;
   bool isComplete;
 
-  Habito({
+  Habit({
     required this.name,
     required this.description,
     this.isComplete = false,
@@ -86,6 +132,6 @@ class Habito {
 
   @override
   String toString() {
-    return 'name: $name, description: $description, isComplete: $isComplete';
+    return "name: $name, description: $description, isComplete: $isComplete";
   }
 }
