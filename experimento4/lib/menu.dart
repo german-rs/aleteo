@@ -1,4 +1,4 @@
-import 'package:experimento4/audio_player/audio_player.dart';
+import 'package:experimento4/audio_player/reproductor_musica.dart';
 import 'package:experimento4/entradas_de_datos/in_datos.dart';
 import 'package:experimento4/galeria_imagenes/galeria_imagenes.dart';
 import 'package:experimento4/gestor_habitos/home_habitos.dart';
@@ -41,7 +41,7 @@ class Menu extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => AudioPlayerPage()));
+                          builder: (context) => ReproductorMusica()));
                 },
                 child: const Text('Reproductor de audio')),
             ElevatedButton(
