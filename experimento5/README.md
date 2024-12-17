@@ -1,6 +1,6 @@
 
 # Experimento 5. Galería de Imágenes con Flutter y Provider
-
+📸🌆
 ## Descripción
 
 Este proyecto es una galería de imágenes creada con Flutter, utilizando el paquete `Provider` para la gestión del estado. La aplicación permite a los usuarios agregar imágenes dinámicamente, cambiar la vista entre dos y tres columnas, y ver una imagen en detalle con una animación de transición suave utilizando el widget `Hero`.
