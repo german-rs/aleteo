@@ -12,6 +12,4 @@ Este repositorio contiene una colección de ejemplos desarrollados como parte de
 | [Experimento 3 ](https://github.com/german-rs/aleteo/tree/main/experimento3)    | Widgets - Estados - Navegación |
 | [Experimento 4 ](https://github.com/german-rs/aleteo/tree/main/experimento4)    | Menú - Proyectos       |
 | [Experimento 5 ](https://github.com/german-rs/aleteo/tree/main/experimento5)    | Galería de imágenes con Provider |
-
-
-
+| [Experimento 6 ](https://github.com/german-rs/aleteo/tree/main/experimento6)    | App de películas y de música |
