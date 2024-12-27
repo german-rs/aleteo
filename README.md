@@ -13,3 +13,5 @@ Este repositorio contiene una colección de ejemplos desarrollados como parte de
 | [Experimento 4 ](https://github.com/german-rs/aleteo/tree/main/experimento4)    | Menú - Proyectos       |
 | [Experimento 5 ](https://github.com/german-rs/aleteo/tree/main/experimento5)    | Galería de imágenes con Provider |
 | [Experimento 6 ](https://github.com/german-rs/aleteo/tree/main/experimento6)    | App de películas y de música |
+| [Experimento 7 ](https://github.com/german-rs/aleteo/tree/main/experimento7)    | Gestor de tareas con BLoC|
+| [Experimento 8 ](https://github.com/german-rs/aleteo/tree/main/experimento8)    | App para adopción de animales|
